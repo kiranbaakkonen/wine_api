@@ -41,4 +41,4 @@ def delete_wine(request, wine_id):
     if request.method == "POST":
         wine = Wine.objects.get(id=wine_id)
         wine.delete()
-    return JsonResponse(data={'status': 'Successfully deleted wine.'}, status=200)
+    return JsonResponse(data={'status': 'Successfull deleted wine.'}, status=200)
